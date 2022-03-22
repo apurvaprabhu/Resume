@@ -27,14 +27,29 @@
         width: 63%;
         margin: 24px 10px 10px 10px;
       }
-      @media screen and (max-width: 600px) {
+      .language {
+        display: inline-block;
+        float:left;
+        width:200px;
+        margin-right: 10px;
+
+      }
+      .languages {
+        display: inline-block;
+        float:inline-end;
+        width: 600px;
+      }
+
+      @media only screen and (min-width: 200px) and (max-width: 767px) {
         .container-fluid {
           float: none;
           width: 100%;
+          margin: 10px;
         }
         .container {
           float: none;
           width: 100%;
+          margin: 10px;
         }
       }
     </style>
@@ -75,14 +90,18 @@
 
       <br /><br />
       <h4>Languages</h4>
-      <ul style="display: inline; float: left; width: 200px">
+      <div class="language">
+      <ul>
         <li>English</li>
         <li>Marathi</li>
       </ul>
-      <ul style="float: right; width: 200px">
+</div>
+<div class="languages">
+      <ul>
         <li>Konkani</li>
         <li>Hindi</li>
       </ul>
+</div>
 
       <br />
       <br />
@@ -102,19 +121,24 @@
         Creativity.
       </p>
       <h4>Skill Highlights</h4>
-      <ul style="display: inline; float: left; width: 200px">
-        <li>C</li>
-        <li>BOOTSTRAP</li>
-        <li>JAVASCRIPT</li>
-        <li>HTML</li>
-      </ul>
-      <ul style="float: right; width: 600px">
-        <li>PHP</li>
-        <li>C++</li>
-        <li>JAVA</li>
-        <li>CSS</li>
-      </ul>
-      <br /><br /><br /><br /><br />
+      <div class="language">
+                  <ul>
+          <li>C</li>
+          <li>BOOTSTRAP</li>
+          <li>JAVASCRIPT</li>
+          <li>HTML</li>
+        </ul>
+      </div>
+
+      <div class="languages">
+        <ul >
+          <li>PHP</li>
+          <li>C++</li>
+          <li>JAVA</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <br /><br /><br />
       <h4>EXPERIENCE:</h4>
       <p>
         Working as a Programmer at Megasoft Systems Margao Goa from 1st August
